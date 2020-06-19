@@ -1,0 +1,1 @@
+"use strict";module.exports.getAll=function(e,t){},module.exports.create=function(e,t){};

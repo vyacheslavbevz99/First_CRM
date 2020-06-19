@@ -1,1 +1,1 @@
-"use strict";module.exports.login=function(o,t){t.status(200).json({login:"from controller"})};
+"use strict";module.exports.login=function(o,t){t.status(200).json({login:"from controller"})},module.exports.register=function(o,t){t.status(200).json({register:"from controller"})};

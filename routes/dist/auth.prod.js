@@ -1,1 +1,1 @@
-"use strict";var express=require("express"),controller=require("../controllers/auth"),router=express.Router();router.get("./login",controller.login),module.exports=router;
+"use strict";var express=require("express"),controller=require("../controllers/auth"),router=express.Router();router.post("/login",controller.login),router.post("/register",controller.register),module.exports=router;

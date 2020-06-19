@@ -1,0 +1,1 @@
+"use strict";module.exports.getAll=function(e,o){},module.exports.getById=function(e,o){},module.exports.remove=function(e,o){},module.exports.create=function(e,o){},module.exports.update=function(e,o){};
