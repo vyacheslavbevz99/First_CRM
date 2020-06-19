@@ -1,0 +1,1 @@
+"use strict";var express=require("express"),authRoutes=require("./routes/auth"),app=express();app.use("/api/auth"+authRoutes),module.exports=app;

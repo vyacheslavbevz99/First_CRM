@@ -1,0 +1,1 @@
+"use strict";module.exports.login=function(o,t){t.status(200).json({login:"from controller"})};
