@@ -4,6 +4,8 @@ var express = require('express');
 
 var bodyParser = require('body-parser');
 
+var mongoose = require('mongoose');
+
 var cors = require('cors');
 
 var morgan = require('morgan');
@@ -18,7 +20,14 @@ var orderRoutes = require('./routes/order');
 
 var positionRoutes = require('./routes/position');
 
+var keys = require('./config/keys');
+
 var app = express();
+mongoose.connect(keys.mongoURL).then(function () {
+  return console.log('MongoDB connected.');
+})["catch"](function (error) {
+  return console.log(error);
+});
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({
   extended: true
