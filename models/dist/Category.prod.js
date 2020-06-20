@@ -1,0 +1,1 @@
+"use strict";var mongoose=require("mongoose"),Schema=mongoose.Schema,categoryShema=new Schema({name:{type:String,required:!0},imageSrc:{type:String,default:""},user:{ref:"users",type:Schema.Types.ObjectId}});module.exports=mongoose.model("categories",categoryShema);

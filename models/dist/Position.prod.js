@@ -1,0 +1,1 @@
+"use strict";var mongoose=require("mongoose"),Schema=mongoose.Schema,positionSchema=new Schema({name:{type:String,required:!0},cost:{type:Number,require:!0},category:{ref:"categories",type:Schema.Types.ObjectId},user:{ref:"users",type:Schema.Types.ObjectId}});module.exports=mongoose.model("position",positionSchema);

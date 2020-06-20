@@ -9,8 +9,7 @@ module.exports.login = function (req, res) {
   });
 };
 
-module.exports.register = function (req, res) {
-  res.status(200).json({
-    register: "from controller"
-  });
+module.exports.register = function (req, res) {//email and password
+  //если имеил есть выкидываем
+  //пароль защищаем
 };
